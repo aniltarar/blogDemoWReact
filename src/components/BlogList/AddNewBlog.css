@@ -1,0 +1,23 @@
+.addNewBlogHeader{
+    text-align: center;
+}
+
+.inputArea{
+display: flex;
+flex-direction: column;
+padding: 1rem;
+gap: 15px;
+font-size: 1.2rem;
+}
+.form input{
+    font-size: 1.2rem;
+    padding: 10px;
+}
+textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 5rem;
+    max-height: 20rem;
+    font-size: 1.2rem;
+    padding: 10px;
+}

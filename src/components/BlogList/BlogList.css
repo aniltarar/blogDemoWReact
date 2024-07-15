@@ -13,3 +13,14 @@
     width: 100%;
     font-size: 1.2rem;
 }
+.sortSelect{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+.sortSelect select{
+    font-size: 1.2rem;
+}

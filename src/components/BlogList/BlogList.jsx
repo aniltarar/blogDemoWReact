@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import { blogData } from "../../blogData";
 import BlogItem from "./BlogItem";
 import "./BlogList.css";
+import AddNewBlog from "./AddNewBlog";
 
 const BlogList = () => {
   const [search, setSearch] = useState("");
   const [selected, setSelected] = useState("authorSort");
+  const [blogs,setBlogs] = useState(blogData);
+
 
   const handleSearch = (e) => {
     setSearch(e.target.value);
@@ -36,6 +39,7 @@ const BlogList = () => {
 
   return (
     <>
+    <AddNewBlog blogs = {blogs} setBlogs={setBlogs}/>
       <div className="listWrapper">
         <div className="listHeader">
           <h1 style={{ textAlign: "center" }}>All Posts</h1>
@@ -59,11 +63,11 @@ const BlogList = () => {
         </div>
         <div className="blogGrid">
           {sortBlogs(
-            blogData.filter((item) => {
+            blogs.filter((item) => {
               return search.toLowerCase() === ""
                 ? item
                 : item.authorName.toLowerCase().includes(search) ||
-                    item.blogTitle.toLowerCase().includes(search);
+                    item.blogTitle.toLowerCase().includes(search); //eğer search inputtaki değer "" boş ise item'i döndür, doluysa yazar adı ve blogTitle eşleşenleri döndür
             })
           ).map((item) => {
             return (

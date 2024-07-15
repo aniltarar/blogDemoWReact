@@ -5,8 +5,8 @@ const BlogItem = ({id,authorName,authorImage,blogTitle,blogContent,blogCategory,
     <>
       <div className="blogItemCard">
         <div className="blogCardHeader">
-          <img src={authorImage} alt={ `${authorImage}'s image.`} />
-          <h3>{authorName}</h3>
+          <img className="authorImage" src={authorImage} alt={ `${authorImage}'s image.`} />
+          <h3>{authorName.slice(0,20)}</h3>
         </div>
         
         <div className="blogCardContent">
