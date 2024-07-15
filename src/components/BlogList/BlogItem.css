@@ -7,14 +7,14 @@
 }
 .blogCardHeader{
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
 }
 .blogCardHeader img{
     border-radius: 100px;
 }
 .blogCardContent{
-    margin-top: 10px;
+    margin: 20px 0;
     border-top: 1px solid black;
     
 }

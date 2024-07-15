@@ -52,7 +52,7 @@ export const blogData = [
   {
     id: 6,
     authorName: "Zeynep Kılıç",
-    authorImage: "https://picsum.photos/id/205/100/100",
+    authorImage: "https://picsum.photos/id/185/100/100",
     blogTitle: "Kişisel Gelişim Yolları",
     blogContent:
       "Kişisel gelişim, bireyin kendi potansiyelini keşfetme ve geliştirme sürecidir. Sürekli öğrenmeyi içerir.",
@@ -61,7 +61,7 @@ export const blogData = [
   },
   {
     id: 7,
-    authorName: "Berkay Arslan",
+    authorName: "Ahmet Arslan",
     authorImage: "https://picsum.photos/id/206/100/100",
     blogTitle: "Mobil Uygulama Geliştirme",
     blogContent:
@@ -72,7 +72,7 @@ export const blogData = [
   {
     id: 8,
     authorName: "Selin Öztürk",
-    authorImage: "https://picsum.photos/id/207/100/100",
+    authorImage: "https://picsum.photos/id/287/100/100",
     blogTitle: "Doğal Yaşam ve Çevre Bilinci",
     blogContent:
       "Doğal yaşam, doğayla uyum içinde yaşamak ve çevreye duyarlı olmak anlamına gelir.",
@@ -101,7 +101,7 @@ export const blogData = [
   },
   {
     id: 11,
-    authorName: "Gül Çetin",
+    authorName: "Ahmet Çetin",
     authorImage: "https://picsum.photos/id/210/100/100",
     blogTitle: "Sanat ve Yaratıcılık",
     blogContent:
@@ -121,7 +121,7 @@ export const blogData = [
   },
   {
     id: 13,
-    authorName: "İpek Eren",
+    authorName: "Furkan Eren",
     authorImage: "https://picsum.photos/id/212/100/100",
     blogTitle: "Evde Bitki Bakımı",
     blogContent:
@@ -141,7 +141,7 @@ export const blogData = [
   },
   {
     id: 15,
-    authorName: "Lale Karaca",
+    authorName: "Furkan Karaca",
     authorImage: "https://picsum.photos/id/214/100/100",
     blogTitle: "Yemek Tarifleri",
     blogContent:
@@ -242,7 +242,7 @@ export const blogData = [
   {
     id: 25,
     authorName: "Yunus Çelik",
-    authorImage: "https://picsum.photos/id/224/100/100",
+    authorImage: "https://picsum.photos/id/274/100/100",
     blogTitle: "Ev Dekorasyonu",
     blogContent:
       "Ev dekorasyonu, yaşam alanlarınızı güzelleştirmek için önemlidir. Estetik ve fonksiyonel çözümler üretin.",

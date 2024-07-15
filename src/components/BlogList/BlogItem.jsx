@@ -1,25 +1,24 @@
 import React from "react";
 import "./BlogItem.css";
-const BlogItem = () => {
+const BlogItem = ({id,authorName,authorImage,blogTitle,blogContent,blogCategory,blogDate}) => {
   return (
     <>
       <div className="blogItemCard">
         <div className="blogCardHeader">
-          <img src="https://picsum.photos/id/214/100/100" alt="Author Image" />
-          <h3>Author Name</h3>
+          <img src={authorImage} alt={ `${authorImage}'s image.`} />
+          <h3>{authorName}</h3>
         </div>
         
         <div className="blogCardContent">
+            <h4>{blogTitle}</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            neque qui sequi sint explicabo fugiat tempore labore natus
-            voluptate?
+            {blogContent}
           </p>
         </div>
         <div className="blogCardFooter">
           <div className="leftFooter">
-            <span>Blog Date</span>
-            <span>Blog Category</span>
+            <span>Post Paylaşım Tarihi : {blogDate}</span>
+            <span>Post Kategorisi : {blogCategory}</span>
           </div>
           <div className="rigthFooter">
             <button>Düzenle</button>
