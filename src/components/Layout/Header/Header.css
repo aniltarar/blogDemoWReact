@@ -1,0 +1,12 @@
+.headerBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ececec;
+    border-bottom: 1px solid black;
+}
+.headerBar:hover{
+    background-color: #bbb8b8;
+    transition: .2s ease-in;
+}
