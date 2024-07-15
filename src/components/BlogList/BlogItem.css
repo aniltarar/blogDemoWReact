@@ -1,0 +1,28 @@
+.blogItemCard{
+    box-shadow: 1px 2px 4px 1px rgb(153, 162, 165);
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.blogCardHeader{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.blogCardHeader img{
+    border-radius: 100px;
+}
+.blogCardContent{
+    margin-top: 10px;
+    border-top: 1px solid black;
+    
+}
+.blogCardFooter{
+    display: flex;
+    justify-content: space-between;
+}
+.leftFooter{
+    display: flex;
+    gap: 30px;
+}
