@@ -7,8 +7,7 @@ import AddNewBlog from "./AddNewBlog";
 const BlogList = () => {
   const [search, setSearch] = useState("");
   const [selected, setSelected] = useState("authorSort");
-  const [blogs,setBlogs] = useState(blogData);
-
+  const [blogs, setBlogs] = useState(blogData);
 
   const handleSearch = (e) => {
     setSearch(e.target.value);
@@ -37,9 +36,19 @@ const BlogList = () => {
     }
   };
 
+  const updateBlog = (updatedBlog) => {
+    setBlogs(
+      blogs.map((blog) => (blog.id === updatedBlog.id ? updatedBlog : blog))
+    );
+  };
+
+  const deleteBlog = (id) => {
+    setBlogs(blogs.filter((blog) => blog.id !== id));
+  };
+
   return (
     <>
-    <AddNewBlog blogs = {blogs} setBlogs={setBlogs}/>
+      <AddNewBlog blogs={blogs} setBlogs={setBlogs} />
       <div className="listWrapper">
         <div className="listHeader">
           <h1 style={{ textAlign: "center" }}>All Posts</h1>
@@ -67,7 +76,7 @@ const BlogList = () => {
               return search.toLowerCase() === ""
                 ? item
                 : item.authorName.toLowerCase().includes(search) ||
-                    item.blogTitle.toLowerCase().includes(search); //eğer search inputtaki değer "" boş ise item'i döndür, doluysa yazar adı ve blogTitle eşleşenleri döndür
+                    item.blogTitle.toLowerCase().includes(search);
             })
           ).map((item) => {
             return (
@@ -80,6 +89,8 @@ const BlogList = () => {
                 blogContent={item.blogContent}
                 blogCategory={item.blogCategory}
                 blogDate={item.blogDate}
+                updateBlog={updateBlog}
+                deleteBlog={deleteBlog} // deleteBlog işlevini burada iletin
               />
             );
           })}

@@ -113,9 +113,7 @@ const AddNewBlog = ({ blogs, setBlogs }) => {
               />
             </div>
 
-            <button >
-              Ekle
-            </button>
+            <button>Ekle</button>
           </form>
         </div>
       </Wrapper>
