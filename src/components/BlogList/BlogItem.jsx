@@ -1,5 +1,6 @@
 import React from "react";
 import "./BlogItem.css";
+import Button from "../UI/Button";
 const BlogItem = ({id,authorName,authorImage,blogTitle,blogContent,blogCategory,blogDate}) => {
   return (
     <>
@@ -21,7 +22,8 @@ const BlogItem = ({id,authorName,authorImage,blogTitle,blogContent,blogCategory,
             <span>Post Kategorisi : {blogCategory}</span>
           </div>
           <div className="rigthFooter">
-            <button>Düzenle</button>
+            <Button btnColor={"warning"}>Düzenle</Button>
+            
           </div>
         </div>
       </div>
