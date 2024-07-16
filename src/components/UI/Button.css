@@ -1,6 +1,7 @@
 .btn{
     padding: .3rem .8rem;
     border-radius: .3rem;
+    border: .5px solid black;
     background-color: white;
     color: black;
     margin: .1rem;
@@ -11,11 +12,11 @@
     transition: .1s ease;
 }
 .sm{
-    padding: .3rem .8rem;
+    padding: .2rem .6rem;
     border-radius: .3rem;
     background-color: white;
     color: black;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 .md{
     padding: .5rem 1rem;
