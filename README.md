@@ -1,8 +1,19 @@
-# React + Vite
+# Blog Demo with React app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu uygulamada react'ın props özellikleri baz alınmıştır. İç içe propslar kullanılarak bileşenler arası iletişimin yapılması amaçlanmıştır. Uygulamada css için özel bir kütüphane kullanılmamaktadır. Saf şekilde react özellikleri ile yapılmış bir projedir.
+Ekran görüntüleri ise şu şekildedir.
 
-Currently, two official plugins are available:
+## Yeni Yazı Ekleme Ekranı
+![image](https://github.com/user-attachments/assets/8fa5eca2-4846-46f1-a3b3-c10d6abf7a58)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Arama ve Filtreleme Özellikleri
+![image](https://github.com/user-attachments/assets/0924f9d7-1df2-4766-8995-b50ec3c78a7b)
+
+## Düzenleme PopUp Ekranı
+![image](https://github.com/user-attachments/assets/6deea82e-8bcf-42f3-b957-224dcc76e9f2)
+
+## Blogları Listelenmesi
+![image](https://github.com/user-attachments/assets/1a995d6f-7e31-45d9-8462-aaf14829fc15)
+
+Uygulama tamamen useState üzerine kurulmuştur. Temel state ve props yönetimini gözeterek mantığı anlamaya yönelik tamamlanmıştır.
+
